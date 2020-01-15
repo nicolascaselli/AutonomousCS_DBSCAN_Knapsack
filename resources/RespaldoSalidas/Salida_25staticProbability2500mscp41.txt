@@ -1,0 +1,33 @@
+| # | Nest | Binarizacion | %Desc |#Iter |      semilla | BestFit |  GotFit |  instancia | time |
+-------------------------------------------------------------------------------------------------
+| 1 |   25 |staticProbability |  0.25 | 2500 |1558330226656 |     429 |   433.0 | mscp41.txt |  3,5 |
+| 2 |   25 |staticProbability |  0.25 | 2500 |1558330230109 |     429 |   430.0 | mscp41.txt |  5,2 |
+| 3 |   25 |staticProbability |  0.25 | 2500 |1558330235293 |     429 |   432.0 | mscp41.txt |  3,5 |
+| 4 |   25 |staticProbability |  0.25 | 2500 |1558330238780 |     429 |   430.0 | mscp41.txt |  3,4 |
+| 5 |   25 |staticProbability |  0.25 | 2500 |1558330242205 |     429 |   432.0 | mscp41.txt |  4,0 |
+| 6 |   25 |staticProbability |  0.25 | 2500 |1558330246156 |     429 |   431.0 | mscp41.txt |  3,6 |
+| 7 |   25 |staticProbability |  0.25 | 2500 |1558330249712 |     429 |   434.0 | mscp41.txt |  5,9 |
+| 8 |   25 |staticProbability |  0.25 | 2500 |1558330255654 |     429 |   430.0 | mscp41.txt |  4,0 |
+| 9 |   25 |staticProbability |  0.25 | 2500 |1558330259637 |     429 |   430.0 | mscp41.txt |  3,5 |
+|10 |   25 |staticProbability |  0.25 | 2500 |1558330263157 |     429 |   430.0 | mscp41.txt |  3,4 |
+|11 |   25 |staticProbability |  0.25 | 2500 |1558330266580 |     429 |   431.0 | mscp41.txt |  4,4 |
+|12 |   25 |staticProbability |  0.25 | 2500 |1558330270988 |     429 |   430.0 | mscp41.txt |  5,5 |
+|13 |   25 |staticProbability |  0.25 | 2500 |1558330276469 |     429 |   429.0 | mscp41.txt |  5,0 |
+|14 |   25 |staticProbability |  0.25 | 2500 |1558330281467 |     429 |   433.0 | mscp41.txt |  5,3 |
+|15 |   25 |staticProbability |  0.25 | 2500 |1558330286803 |     429 |   430.0 | mscp41.txt |  4,9 |
+|16 |   25 |staticProbability |  0.25 | 2500 |1558330291685 |     429 |   432.0 | mscp41.txt |  3,7 |
+|17 |   25 |staticProbability |  0.25 | 2500 |1558330295401 |     429 |   429.0 | mscp41.txt |  5,0 |
+|18 |   25 |staticProbability |  0.25 | 2500 |1558330300376 |     429 |   432.0 | mscp41.txt |  5,5 |
+|19 |   25 |staticProbability |  0.25 | 2500 |1558330305857 |     429 |   429.0 | mscp41.txt |  5,1 |
+|20 |   25 |staticProbability |  0.25 | 2500 |1558330310927 |     429 |   430.0 | mscp41.txt |  4,5 |
+|21 |   25 |staticProbability |  0.25 | 2500 |1558330315467 |     429 |   433.0 | mscp41.txt |  5,5 |
+|22 |   25 |staticProbability |  0.25 | 2500 |1558330320987 |     429 |   431.0 | mscp41.txt |  3,7 |
+|23 |   25 |staticProbability |  0.25 | 2500 |1558330324730 |     429 |   430.0 | mscp41.txt |  5,2 |
+|24 |   25 |staticProbability |  0.25 | 2500 |1558330329935 |     429 |   434.0 | mscp41.txt |  7,1 |
+|25 |   25 |staticProbability |  0.25 | 2500 |1558330337050 |     429 |   430.0 | mscp41.txt |  5,4 |
+|26 |   25 |staticProbability |  0.25 | 2500 |1558330342404 |     429 |   432.0 | mscp41.txt |  4,9 |
+|27 |   25 |staticProbability |  0.25 | 2500 |1558330347349 |     429 |   433.0 | mscp41.txt |  5,8 |
+|28 |   25 |staticProbability |  0.25 | 2500 |1558330353100 |     429 |   430.0 | mscp41.txt |  4,4 |
+|29 |   25 |staticProbability |  0.25 | 2500 |1558330357533 |     429 |   429.0 | mscp41.txt |  5,3 |
+|30 |   25 |staticProbability |  0.25 | 2500 |1558330362854 |     429 |   430.0 | mscp41.txt |  4,8 |
+|31 |   25 |staticProbability |  0.25 | 2500 |1558330367644 |     429 |   430.0 | mscp41.txt |  4,5 |
