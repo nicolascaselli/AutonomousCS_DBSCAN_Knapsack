@@ -1,6 +1,4 @@
-package ncb.phd.pucv.cuckooSearch.dbscan.metrics;
-
-import ncb.phd.pucv.cuckooSearch.dbscan.DistanceMetric;
+package ncb.phd.pucv.cuckooSearch.dbscan;
 
 /**
  * Distance metric implementation for numeric values.

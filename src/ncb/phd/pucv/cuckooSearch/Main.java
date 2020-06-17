@@ -477,21 +477,26 @@ public class Main {
 	
 	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		int cantNidos = 25;
+		int cantNidos = 25, iteracionIntervencionML = 200;
 		float probDescub = (float) 0.25;
-		int numeroIteraciones = 2500;
+		int numeroIteraciones = 2500, cantEjecuciones=15;
 		try {
 
 			cargaInstancias_mochila();
 
-			cargaTiposDeBinarizaciones();
-			cargaTiposDeDiscretizaciones();
+//			cargaTiposDeBinarizaciones();
+//			cargaTiposDeDiscretizaciones();
 			
 			for (int numInstanciaMochila = 1; numInstanciaMochila<= mInstanciasMochilas.size(); numInstanciaMochila++){
-				CuckooSearch CuckooSearch_Knapsack = new CuckooSearch(cantNidos, 
+				CuckooSearch CuckooSearch_Knapsack = new CuckooSearch(
+						cantNidos, 
 						probDescub, 
 						numeroIteraciones, 
-						mInstanciasMochilas.get(numInstanciaMochila)
+						mInstanciasMochilas.get(numInstanciaMochila),
+						"standard", 
+						"sshape3",
+						iteracionIntervencionML,
+						cantEjecuciones
 						);
 
 				CuckooSearch_Knapsack.ejecutar();

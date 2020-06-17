@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 //import java.util.Random;
 
-import ncb.phd.pucv.cuckooSearch.dbscan.metrics.DistanceMetricPunto;
+import ncb.phd.pucv.cuckooSearch.Punto;
 
 
 

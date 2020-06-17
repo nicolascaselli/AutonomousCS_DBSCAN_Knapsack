@@ -1,10 +1,12 @@
-package ncb.phd.pucv.cuckooSearch.dbscan;
+package ncb.phd.pucv.cuckooSearch;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Punto {
 	private Float[] data;
 	private int posFila, posColumna;
+	private float fitnessSolucion;
 
 	public Punto(String[] strings) {
 		super();
@@ -27,6 +29,20 @@ public class Punto {
 		this.data = data;
 		this.posFila = posF;
 		this.posColumna = posC;
+	}
+	public Punto(Float[] data, int posF, int posC, float fitness) {
+		this.data = data;
+		this.posFila = posF;
+		this.posColumna = posC;
+		this.fitnessSolucion = fitness;
+	}
+
+	public float getFitnessSolucion() {
+		return fitnessSolucion;
+	}
+
+	public void setFitnessSolucion(float fitnessSolucion) {
+		this.fitnessSolucion = fitnessSolucion;
 	}
 
 	public int getPosicionFila() {
@@ -82,4 +98,13 @@ public class Punto {
 		}
 		return true;
 	}
+}
+class SortbyFitness implements Comparator<Punto> 
+{ 
+    // Used for sorting in ascending order of 
+    // roll number 
+    public int compare(Punto a, Punto b) 
+    { 
+        return (int)(a.getFitnessSolucion()-b.getFitnessSolucion()); 
+    } 
 }
