@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -831,9 +832,9 @@ public class CuckooSearch{
 	 * @return el valor de la suma de todos los elementos considerados en la mochila.
 	 */
 	private float funcionObjetivo(float nidoBinario[]) {
-		int costo = 0;
+		float costo = 0;
 		for (int j=0; j< mochila.getObjetos().size(); j++)
-			  costo += nidoBinario[j] * (int) (mochila.getObjetos().get(j).getValor());
+			  costo += nidoBinario[j] * (mochila.getObjetos().get(j).getValor());
 //		mochila.setCostoActual(costo);
 		return costo;
 	}
@@ -1001,7 +1002,7 @@ public class CuckooSearch{
 	                		Write(8,tipoBinarizacion) + //%-12s 
 	                		Write(8,mochila.getCapacidadmochila()) + //%-10s
 	                		Write(8, mochila.getValorOptimo()) + //%-10s
-	                		Write(8, bestFit)+ //%-10s
+	                		Write(8, String.format("%.4f",bestFit))+ //%-10s
 	                		Write(8, String.format("%.2f", Math.abs((bestFit- mochila.getValorOptimo())/mochila.getValorOptimo()*100)))+ //%-5s
 	                		Write(5, (String.format("%.2g%n", (tiempoTermino-tiempoInicioEjecucion) / (1000f))).trim()); //%-5s
 	                line += Write(13, semilla) + //%-13s
@@ -1107,7 +1108,11 @@ public class CuckooSearch{
 						
 					}
 					iEsimaIteracion++;
-					if(bestFit >= mochila.getValorOptimo())
+					DecimalFormat decimalFormat = new DecimalFormat("#.0000");
+//					String numberAsString = decimalFormat.format(number);
+								
+//					if(bestFit >= mochila.getValorOptimo())
+					if (decimalFormat.format(bestFit).compareTo(decimalFormat.format(mochila.getValorOptimo())) == 0)
 						break;
 //					evolucionarCuckooSearch();
 					
@@ -1149,7 +1154,7 @@ public class CuckooSearch{
 				,String.format("%.7f", cs_probDescubrimiento)
 				, mochila.getCapacidadmochila()
 				, mochila.getValorOptimo()
-				,(int)bestFit   
+				,String.format("%.4f", bestFit)
 				,String.format("%.2f",Math.abs((bestFit - mochila.getValorOptimo()) / mochila.getValorOptimo() * 100))
 //				,String.format("%2.0f", (float) TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis() - tiempoInicioEjecucion))
 //				,String.format("%2.0f", (float) TimeUnit.MILLISECONDS.toHours(System.currentTimeMillis() - tiempoInicioEjecucion)-TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis() - tiempoInicioEjecucion)*24)
